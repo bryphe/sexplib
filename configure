@@ -1,5 +1,10 @@
 #!/bin/sh
 
+if which x86_64-w64-mingw32-cpp; then
+    echo "Using MingW cpp"
+    cp _tags.mingw _tags
+fi
+
 # OASIS_START
 make configure CONFIGUREFLAGS="$*"
 # OASIS_STOP
