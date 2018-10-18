@@ -5,6 +5,6 @@
 <src/*.ml>: for-pack(Sexplib)
 <num/lib/*.ml>: for-pack(Sexplib_num)
 <unix/lib/*.ml>: for-pack(Sexplib_unix)
-<src/pre_sexp.ml>: pp(cpp -undef -traditional -Isyntax -w)
+<src/pre_sexp.ml>: pp(x86_64-w64-mingw32-cpp -undef -traditional -Isyntax -w)
 # OASIS_START
 # OASIS_STOP
